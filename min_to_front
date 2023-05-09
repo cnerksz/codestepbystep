@@ -1,0 +1,10 @@
+def min_to_front(a):
+    mina = min(a)
+    new=[]
+    new.append(mina)
+    for i in a:
+        if i!=min:
+            new.append(i)
+    for j in range(len(new)):
+        a[j]=new[j]
+        
