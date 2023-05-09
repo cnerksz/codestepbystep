@@ -1,0 +1,17 @@
+def word_wrap(a):
+        file=open(a, "r" )
+        read = file.read().splitlines()
+        for i in read:
+            width = len(i)
+            start=0
+            end=60
+            while width >= 60 :
+                print(i[start:end])
+                width-=60
+                start+=60
+                end+=60
+            while 0 <= width< 60 :
+                print(i[start:])
+                break
+            
+    
