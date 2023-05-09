@@ -1,0 +1,10 @@
+def stutter(a):
+    new=[]
+    str=""
+    for i in range(len(a)):
+        for j in range(0,2):
+            new.append(a[i])
+    for t in range(len(new)):
+        str+=new[t]
+    return str
+
