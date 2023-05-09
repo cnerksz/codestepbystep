@@ -1,0 +1,6 @@
+from DrawingPanel import *
+a=DrawingPanel(200,200,background="white")
+def show_design():
+    for i in range(4):
+        c=i
+        a.draw_rect(20+20*c,20+20*c,160-40*c,160-40*c)
