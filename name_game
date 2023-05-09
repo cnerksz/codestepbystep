@@ -1,0 +1,23 @@
+a = input("What is your name? ")
+new = ""
+new2 = ""
+new3=""
+new4=""
+count = 0
+for i in range(len(a)):
+    count += 1
+    if a[i] == " ":
+        break
+    new += a[i]
+for j in range(count, len(a)):
+    new2 += a[j]
+for t in range(1, len(new)):
+    new3+=new[t]
+for k in range(1,len(new2)):
+    new4+=new2[k]
+
+print(new + ", " + new + ", " + "bo-B"+new3+"\n"+"Banana-fana fo-F"+new3+"\n"+"Fee-fi-mo-M"+new3+"\n"+new.upper()+"!")
+print()
+print(new2 + ", " + new2 + ", " + "bo-B"+new4+"\n"+"Banana-fana fo-F"+new4+"\n"+"Fee-fi-mo-M"+new4+"\n"+new2.upper()+"!")
+
+
