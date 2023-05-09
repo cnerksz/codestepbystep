@@ -1,0 +1,8 @@
+def remove_duplicates(a):
+    if len(a)==0:
+        return ""
+    str = ""
+    for i in range(0,len(a)-1):
+        if(a[i] != a[i+1]):
+            str += a[i]
+    return str+a[len(a)-1]
