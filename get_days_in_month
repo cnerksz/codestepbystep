@@ -1,0 +1,3 @@
+def get_days_in_month(a):
+    new=[31,28,31,30,31,30,31,31,30,31,30,31]
+    return new[a-1]
