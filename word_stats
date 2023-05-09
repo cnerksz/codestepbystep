@@ -1,0 +1,18 @@
+def word_stats(a):
+    file=open(a)
+    read=file.readlines()
+    average=0
+    count=0
+    new=[]
+    for t in read:
+        for i in t.split():
+            count+=1
+            average+=len(i)
+        for j in t.upper():
+            if j not in new and j!=" " and j!="," and j!="." and j!="!" and j!=":":
+                 new.append(j)
+
+    print("Total words    =", count)
+    print("Average length =", average / count)
+    print("Unique letters =",len(new)-1)
+
