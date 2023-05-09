@@ -1,0 +1,15 @@
+c=1
+sum=0
+count=0
+while (c!=0):
+    a=int(input("Integer? "))
+    if (a%2==0) and (a!=0):
+        count+=1
+        sum+=a
+    if (a==0):
+        c=0
+if count!=0:
+    print("Average:",sum/count)
+    
+    
+
