@@ -1,0 +1,36 @@
+def play_roulette(a,b):
+    print("start with $ "+str(a)+" and bet up to $ "+str(b))
+    print("bet\tspin\tmoney")
+    d=[]
+    f=int(b)
+    while a>0:
+        c=random.randint(0,37)
+        if a>=b:
+            if c>0:
+                if c%2==0:
+                    a+=b
+                else:
+                    a-=b
+            else:
+                a-=b  
+            print(str(b)+"\t"+str(c)+"\t"+str(a))
+        else:
+            f=a
+            if c>0:
+                if c%2==0:
+                    a+=f
+                else:
+                    a-=f
+            else:
+                a-=f       
+            print(str(f)+"\t"+str(c)+"\t"+str(a))
+        d.append(a)
+        
+    print("max money: $",max(d))
+  
+
+
+
+
+
+
