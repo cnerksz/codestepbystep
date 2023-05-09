@@ -1,0 +1,14 @@
+def collapse_pairs(a):
+    b=a.copy()
+    a.clear()
+    for i in range(0,len(b),2):
+        if i+1<len(b):
+            if (b[i]+b[i+1])%2!=0:
+                a.insert(i,0)
+                a.insert(i+1,b[i]+b[i+1])
+            elif (b[i]+b[i+1])%2==0:
+                a.insert(i,b[i]+b[i+1])
+                a.insert(i+1,0)
+        if len(b)%2!=0 and i+1==len(b):
+            a.append(b[i])
+    
