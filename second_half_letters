@@ -1,0 +1,11 @@
+def second_half_letters(a):
+    count=0
+    alphabet="nopqrstuvwxyzNOPQRSTUVWXYZ"
+    for i in range(0,len(a)):
+        if a[i] in alphabet:
+            count+=1
+    return count
+            
+
+
+
