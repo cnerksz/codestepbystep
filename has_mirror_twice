@@ -1,0 +1,41 @@
+def has_mirror_twice(a,b):
+    new=[]
+    new1=[]
+    count=0
+    for j in b:
+        new1.append(j)
+    new1.reverse()
+    c = len(b)
+    for k in range(len(a)-len(b)+1):
+        for t in range(k,c):
+            new.append(a[t])
+        if new==new1:
+            count+=1
+        print(count)
+        new.clear()
+        c+=1
+    if count>=2:
+        return True
+    else:
+        return False
+def can(a,b):
+    new=[]
+    new1=[]
+    count=0
+    for j in b:
+        new1.append(j)
+    new1.reverse()
+    c = len(b)
+    for k in range(len(a)-len(b)+1):
+        for t in range(k,c):
+            new.append(a[t])
+        if new==new1:
+            count+=1
+        print(count)
+        new.clear()
+        c+=1
+    if count>=2:
+        return True
+    else:
+        return False
+
