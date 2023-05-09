@@ -1,0 +1,46 @@
+def class_presidents(a):
+    file=open(a)
+    b=file.readline()
+    c=b.split()
+    woman=[]
+    man=[]
+    k=0
+    t=0
+    name=""
+    h=""
+    str=""
+    for i in range(0, len(c), 3):
+        t = i + 1
+        k = t + 1
+        if c[t] == "j":
+            man.append(c[k])
+        if c[t] == "s":
+            woman.append(c[k])
+    max1 = max(man)
+    max2 = max(woman)
+    for i in range(0,len(c),3):
+        name=c[i]
+        t=i+1
+        k=t+1
+        if (c[t] == "j") and (c[k] == max1):
+            h = ""
+            h += "Junior Class President: "
+            h+=name
+            h+=" ("
+            h+=c[k]
+            h+=" votes)"
+
+        elif (c[t] == "s") and (c[k] == max2):
+            str = ""
+            str += "Sophomore Class President: "
+            str+=name
+            str+=" ("
+            str+=c[k]
+            str+=" votes)"
+    if max1>max2:
+        print(h)
+        print(str)
+    else:
+        print(str)
+        print(h)
+
