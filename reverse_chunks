@@ -1,0 +1,20 @@
+def reverse_chunks(a,b):
+    new=[]
+    new2=[]
+    n=0
+    t=b
+    k=len(a)%b
+    str=""
+    for i in range(0,len(a),b):
+        if b-1<len(a):
+            for j in range(b-1,n-1,-1):
+                new.append(a[j])
+        n += t
+        b += t
+    for h in range(len(a)-1,len(a)-k-1,-1):
+        new2.append(a[h])
+    new2.reverse()
+    new.extend(new2)
+    for l in range(0,len(new)):
+        str+=new[l]
+    return str
