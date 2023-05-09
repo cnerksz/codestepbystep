@@ -1,0 +1,16 @@
+def even_sum():
+    a=int(input("how many integers? "))
+    total=0
+    c=[]
+    for i in range(0,a):
+        b=int(input("next integer? "))
+        if b%2==0:
+         total=total+b
+         c.append(b)
+        else:
+            continue
+    print("even sum =",total)
+    print("even max =",max(c))
+
+
+
