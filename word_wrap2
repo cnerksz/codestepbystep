@@ -1,0 +1,18 @@
+def word_wrap2(a,b):
+    file=open(a)
+    read=file.read().splitlines()
+    output=open(b,"a")
+    n=60
+    for i in read:
+        width=len(i)
+        start=0
+        end=n
+        while width>=n:
+            output.write(i[start:end]+"\n")
+            width-=n
+            start+=n
+            end+=n
+        while 0<=width<n:
+            output.write(i[start:]+"\n")
+            break
+    output.close()
