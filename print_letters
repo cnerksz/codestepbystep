@@ -1,0 +1,10 @@
+def print_letters(text):
+    a=len(text)
+    if a!=0:
+         for i in range(0, a-1):
+             print(text[i] + "-", end="")
+    if text=="":
+        print()
+    else:
+        print(text[a-1])
+  # to end the line of output
