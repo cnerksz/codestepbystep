@@ -1,0 +1,18 @@
+def reverse_word_order(a):
+    new=[]
+    b=0
+    strs=""
+
+    for i in range(len(a)):
+        if a[i]==" ":
+            new.append(a[b:i])
+            b=i+1
+    new.append(a[b: len(a)])
+    new.reverse()
+    for j in range(len(new)):
+        if j<len(new)-1:
+            strs+=new[j]+" "
+        else:
+            strs+=new[j]
+    return strs
+
