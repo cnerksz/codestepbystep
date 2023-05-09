@@ -1,0 +1,10 @@
+def is_vowel(a):
+    vowel="aeiouAEIOU"
+    b=0
+    for i in a:
+        if i in vowel:
+            b+=1
+    if b==1:
+        return True
+    else:
+        return False
