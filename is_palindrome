@@ -1,0 +1,15 @@
+def is_palindrome(a):
+    new=[]
+    str=""
+    for i in range(len(a)):
+        new.append(a[i])
+    new.reverse()
+    for j in range(len(new)):
+        str+=(new[j])
+    if a.lower() == str.lower():
+        return True
+    else:
+        return False
+
+
+
