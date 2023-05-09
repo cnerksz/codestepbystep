@@ -1,0 +1,16 @@
+def print_box(a,b):
+    file=open(a)
+    print(b*"#")
+    read = file.readlines()
+    read = [i.strip() for i in read]
+    read = [i.replace("_", "") for i in read]
+    read = [i.capitalize() for i in read]
+    read[:] = (i[:b - 2] for i in read)
+    for i in range(len(read)):
+        if len(read[i]) == 0:
+            print("#" + (b - 2) * " " + "#")
+        else:
+            c = int(len(read[i]))
+            print("#" + read[i] + (b - c - 2) * " " + "#")
+
+    print(b * "#")
