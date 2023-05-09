@@ -1,0 +1,16 @@
+def Piglet():
+    print("Welcome to Piglet!")
+    a=0
+    b="y"
+    point=0
+    while  a!=1 and b=="y" or a!=1 and b=="yes":
+          a=random.randint(0,7)
+          print("You rolled a",a)
+          if a!=1:
+              b=str(input("Roll again? "))
+              point+=a
+          else:
+              point=0
+    print("You got "+str(point)+ " points.")
+Piglet()
+          
