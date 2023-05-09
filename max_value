@@ -1,0 +1,5 @@
+def max_value(nums):
+    a=nums
+    b=max(nums)
+    print(b)
+    return b
