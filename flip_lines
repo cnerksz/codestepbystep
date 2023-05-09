@@ -1,0 +1,14 @@
+def flip_lines(a):
+    file=open(a)
+    read = file.read().splitlines()    
+    if len(read) % 2 == 0:
+        for i in range(0, len(read), 2):
+            print((read[i + 1]).upper())
+            print((read[i]).lower())
+
+
+    else:
+        for i in range(0, len(read) - 1, 2):
+            print((read[i + 1]).upper())
+            print((read[i]).lower())
+        print((read[len(read) - 1]).upper())
