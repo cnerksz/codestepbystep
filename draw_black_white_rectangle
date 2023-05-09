@@ -1,0 +1,5 @@
+panel = DrawingPanel(200, 100)
+panel.set_fill_color("black")
+panel.fill_rect(10, 10, 50, 50)
+panel.set_fill_color("white")
+panel.fill_oval(10, 10, 50, 50)
