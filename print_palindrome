@@ -1,0 +1,13 @@
+def print_palindrome():
+    a=str(input("Type one or more words: "))
+    d=a.upper()
+    b=[]
+    c=[]
+    for i in range(0,len(d)):
+        b.append(d[i])
+        c.append(d[i])
+    b.reverse()
+    if b == c:
+        print(a,"is a palindrome!")
+    else:
+        print(a,"is not a palindrome.")
