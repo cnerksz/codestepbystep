@@ -1,0 +1,9 @@
+def remove_all(a,b):
+    str=""
+    for i in range(0,len(a)):
+        if b[0]==a[i]:
+            continue
+        str += a[i]
+    return str
+        
+            
